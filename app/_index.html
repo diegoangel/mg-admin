@@ -1,0 +1,149 @@
+<!doctype html> 
+<html ng-app="admin" ng-controller="layoutController as layoutVm">     
+	<head>         
+		<meta charset="utf-8">
+		<title translate>Administracion de equipos y sensores</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- MaterialIcons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">         
+		<!--Google fonts --> 
+		<link href='https://fonts.googleapis.com/css?family=Montserrat|Hind:500|Nunito' rel='stylesheet' type='text/css'>         
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
+		<link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
+		<link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" />
+		<link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
+		<link rel="stylesheet" href="bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+		<link rel="stylesheet" href="bower_components/select2/dist/css/select2.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->   
+		<link rel="stylesheet" href="styles/helpers.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->     
+	</head>     
+	<body>         
+	<!--[if lte IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <ahref="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>         
+	<![endif]-->
+
+		<ng-include src="components/layout/layout.html"></ng-include>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+		<script>
+			!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+			(A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+			r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+			}(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+		</script>
+
+		<!-- build:js(.) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-aria/angular-aria.js"></script>
+		<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+		<script src="bower_components/angular-messages/angular-messages.js"></script>
+		<script src="bower_components/angular-resource/angular-resource.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+		<script src="bower_components/angular-touch/angular-touch.js"></script>
+		<script src="bower_components/materialize/bin/materialize.js"></script>
+		<script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
+		<script src="bower_components/angular-datatables/dist/angular-datatables.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/columnfilter/angular-datatables.columnfilter.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/light-columnfilter/angular-datatables.light-columnfilter.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/colvis/angular-datatables.colvis.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/fixedcolumns/angular-datatables.fixedcolumns.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/fixedheader/angular-datatables.fixedheader.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/scroller/angular-datatables.scroller.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/tabletools/angular-datatables.tabletools.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.js"></script>
+		<script src="bower_components/angular-datatables/dist/plugins/select/angular-datatables.select.js"></script>
+		<script src="bower_components/angular-themer/dist/themer.min.js"></script>
+		<script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+		<script src="bower_components/ngstorage/ngStorage.js"></script>
+		<script src="bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+		<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+		<script src="bower_components/datatables-light-columnfilter/dist/dataTables.lightColumnFilter.min.js"></script>
+		<script src="bower_components/datatables.net/js/jquery.dataTables.js"></script>
+		<script src="bower_components/datatables.net-buttons/js/dataTables.buttons.js"></script>
+		<script src="bower_components/datatables.net-buttons/js/buttons.colVis.js"></script>
+		<script src="bower_components/datatables.net-buttons/js/buttons.flash.js"></script>
+		<script src="bower_components/datatables.net-buttons/js/buttons.html5.js"></script>
+		<script src="bower_components/datatables.net-buttons/js/buttons.print.js"></script>
+		<script src="bower_components/select2/dist/js/select2.js"></script>
+		<script src="bower_components/jquery-datatables-columnfilter/jquery.dataTables.columnFilter.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/app.config.js"></script>
+		<script src="scripts/app.translations.js"></script>	
+		<!-- Core -->
+		<script src="scripts/components/core/core.module.js"></script>
+		<script src="scripts/components/core/auth.service.js"></script>
+		<script src="scripts/components/core/gettextCatalog.factory.js"></script>
+		<!-- Equipment -->
+		<script src="scripts/components/equipment/equipment.module.js"></script>
+		<script src="scripts/components/equipment/equipment.factory.js"></script>
+		<script src="scripts/components/equipment/equipmentCreate.controller.js"></script>
+		<script src="scripts/components/equipment/equipmentRead.controller.js"></script>
+		<script src="scripts/components/equipment/equipmentUpdate.controller.js"></script>
+		<script src="scripts/components/equipment/equipmentDelete.controller.js"></script>
+		<script src="scripts/components/equipment/equipmentList.controller.js"></script>
+		<!-- Models -->
+		<script src="scripts/components/models/model.module.js"></script>
+		<script src="scripts/components/models/model.factory.js"></script>
+		<script src="scripts/components/models/modelCreate.controller.js"></script>
+		<script src="scripts/components/models/modelRead.controller.js"></script>
+		<script src="scripts/components/models/modelUpdate.controller.js"></script>
+		<script src="scripts/components/models/modelDelete.controller.js"></script>
+		<script src="scripts/components/models/modelList.controller.js"></script>		
+		<!-- Users -->
+		<script src="scripts/components/users/user.module.js"></script>
+		<script src="scripts/components/users/user.factory.js"></script>
+		<script src="scripts/components/users/userType.factory.js"></script>		
+		<script src="scripts/components/users/userCreate.controller.js"></script>
+		<script src="scripts/components/users/userRead.controller.js"></script>
+		<script src="scripts/components/users/userUpdate.controller.js"></script>
+		<script src="scripts/components/users/userDelete.controller.js"></script>
+		<script src="scripts/components/users/userList.controller.js"></script>			
+		<!-- Clients -->
+		<script src="scripts/components/clients/client.module.js"></script>
+		<script src="scripts/components/clients/client.factory.js"></script>
+		<script src="scripts/components/clients/clientCreate.controller.js"></script>
+		<script src="scripts/components/clients/clientRead.controller.js"></script>
+		<script src="scripts/components/clients/clientUpdate.controller.js"></script>
+		<script src="scripts/components/clients/clientDelete.controller.js"></script>
+		<script src="scripts/components/clients/clientList.controller.js"></script>			
+		<!-- Layout -->
+		<script src="scripts/components/layout/layout.module.js"></script>
+		<script src="scripts/components/layout/layout.controller.js"></script>
+		<!-- Dashboard -->
+		<script src="scripts/components/dashboard/dashboard.module.js"></script>
+		<script src="scripts/components/dashboard/dashboard.controller.js"></script>		
+
+
+		<script src="scripts/controllers/HeaderController.js"></script>
+
+		<!-- Services -->
+		<script src="scripts/services/DTLoadingTemplateFactory.js"></script>
+		<script src="scripts/services/TimezoneFactory.js"></script>
+		<script src="scripts/services/UserTypeFactory.js"></script>		
+		<!-- Directives -->
+		<!-- endbuild -->
+	</body>
+</html>

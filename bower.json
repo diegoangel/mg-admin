@@ -1,0 +1,34 @@
+{
+  "name": "admin",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "angular-animate": "^1.4.0",
+    "angular-aria": "^1.4.0",
+    "angular-cookies": "^1.4.0",
+    "angular-messages": "^1.4.0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-touch": "^1.4.0",
+    "materialize": "~0.97.0",
+    "angular-gettext": "~2.1.0",
+    "angular-ui-router": "~0.2.15",
+    "mdi": "~1.2.65",
+    "angular-datatables": "~0.5.0",
+    "angular-themer": "~0.3.1",
+    "angular-materialize": "*",
+    "ngstorage": "~0.3.9",
+    "angular-breadcrumb": "~0.4.1",
+    "angular-loading-bar": "~0.8.0",
+    "datatables-plugins": "~1.10.10",
+    "datatables-light-columnfilter": "~0.0.11",
+    "datatables.net-buttons": "~1.1.0",
+    "jquery-datatables-columnfilter": "~0.0.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "admin"
+}

@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/views/shared/header.html:14
+#: app/views/shared/header.html:24
+msgid "Clientes"
+msgstr ""
+
+#: app/views/partials/login.html:14
+msgid "Contraseña"
+msgstr ""
+
+#: app/views/shared/header.html:7
+msgid "Editar"
+msgstr ""
+
+#: app/views/shared/header.html:12
+#: app/views/shared/header.html:22
+msgid "Equipos"
+msgstr ""
+
+#: app/views/partials/login.html:22
+msgid "Ingresar"
+msgstr ""
+
+#: app/views/shared/header.html:17
+#: app/views/shared/header.html:27
+msgid "Mi Cuenta"
+msgstr ""
+
+#: app/views/shared/header.html:13
+#: app/views/shared/header.html:23
+msgid "Modelos"
+msgstr ""
+
+#: app/views/partials/login.html:9
+msgid "Usuario"
+msgstr ""
+
+#: app/views/shared/header.html:15
+#: app/views/shared/header.html:25
+msgid "Usuarios"
+msgstr ""
+
+#: app/views/shared/footer.html:3
+msgid "© 2015 Movilgate Derechos Reservados"
+msgstr ""

@@ -1,0 +1,58 @@
+*.so
+Thumbs.db
+/bower_components
+/.sass-cache
+# OS generated files #
+app/data.json
+############
+/dist
+*.zip
+###################
+*.com
+*.o
+# Packages #
+*.log
+*~
+*.tmp
+.project
+*.jar
+*.out
+.metadata
+.DS_Store
+.settings
+*.ipr
+*.dmg
+*.swp
+*.iml
+*.class
+*.dll
+nbproject/
+.idea
+~*
+# Backup generated files #
+.Trashes
+.Spotlight-V100
+*.sql
+# Specific Project files #
+*.7z
+#*
+.DS_Store?
+# Logs and databases #
+# Compiled source #
+._*
+*.iso
+*.exe
+*.tar
+*.gz
+# Project generated files #
+######################
+*.lock
+*.sublime-project
+*.rar
+*.sqlite
+ehthumbs.db
+*.sublime-workspace
+.classpath
+/.tmp
+/node_modules
+*.mo

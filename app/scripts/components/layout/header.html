@@ -1,0 +1,28 @@
+		<header>
+			<div class="navbar-fixed">
+				<nav class="white darken-1">
+					<div class="nav-wrapper">
+						<a href="#!/" class="brand-logo"><img src="images/telemetrica.png" alt=""></a>				
+						<ul class="right hide-on-med-and-down antartica-submenu">
+						 	<li ng-class="{active: $state.includes('root.dashboard')}"><a ui-sref="root.dashboard">Dashboard</a></li>
+							<li ng-class="{active: $state.includes('root.equipment')}"><a ui-sref="root.equipment" translate>Equipos</a></li>
+							<li ng-class="{active: $state.includes('root.models')}"><a ui-sref="root.models" translate>Modelos</a></li>
+							<li ng-class="{active: $state.includes('root.clients')}"><a ui-sref="root.clients" translate>Clientes</a></li>
+							<li ng-class="{active: $state.includes('root.users')}"><a ui-sref="root.users" translate>Usuarios</a></li> 
+							<li ng-class="{active: $state.includes('root.users.show')}"><a ui-shref="root.users.show" translate>Mi Cuenta</span></a></li>
+							<li><a ui-sref="root.logout"><i class="large material-icons">power_settings_new</i></a></li>
+						</ul>
+						<ul id="mobile-nav" class="side-nav antartica-submenu">
+						 	<li ng-class="{active: $state.includes('root.dashboard')}"><a ui-sref="root.dashboard">Dashboard</a></li>
+							<li ng-class="{active: $state.includes('root.equipment')}"><a ui-sref="root.equipment" translate>Equipos</a></li>
+							<li ng-class="{active: $state.includes('root.models')}"><a ui-sref="root.models" translate>Modelos</a></li>
+							<li ng-class="{active: $state.includes('root.clients')}"><a ui-sref="root.clients" translate>Clientes</a></li>
+							<li ng-class="{active: $state.includes('root.users')}"><a ui-sref="root.users" translate>Usuarios</a></li> 
+							<li ng-class="{active: $state.includes('root.users.show')}"><a ui-shref="root.users.show" translate>Mi Cuenta</span></a></li>
+							<li><a ui-sref="root.logout"><i class="large material-icons">power_settings_new</i></a></li>
+						</ul>
+						<a href="#" data-activates="mobile-nav" data-sidenav="left" data-closeonclick="true" class="button-collapse fg-antartica-blue"><i class="mdi-navigation-menu"></i></a>
+					</div>
+				</nav>
+			</div>
+		</header>
